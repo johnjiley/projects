@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Cafe Registration form</title>
+    <link rel="stylesheet" href="myproj.css">
+    
+</head>
+<body>
+
+<h2>Registration form for John Cafe</h2>
+<div class="bg-img">
+<form action="/action_page.php" class="container">
+    <h1>Login</h1>
+    <label for="email or number "><b></b></label>
+    <input type="text" placeholder="Enter Email or Number" name="email" required>
+
+ 
+
+    <label for="psw"><b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit" class="btn">Login</button>
+
+ </form>
+</div>
+<div id="overlay" onclick="off()">
+    <div id="text">Welcome to John Cafe!
+Younger Coffee Customers.
+New Brewing Methods.
+Custom Ordering.
+Specialty Drinks and Artisan Coffee.
+Coffee Treats.
+Sustainable Coffee.
+    </div>
+  </div>
+  
+  <div style="padding:20px">
+    <h2>See what u Desire</h2>
+    <button onclick="on()">Enjoy the Meal</button>
+  </div> 
+  <script>
+    function on() {
+    document.getElementById("overlay").style.display = "block";
+  }
+  
+  function off() {
+    document.getElementById("overlay").style.display = "none";
+  }
+  </script>
+
+</body>
+</html>
